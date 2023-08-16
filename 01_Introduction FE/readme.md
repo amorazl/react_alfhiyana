@@ -4,13 +4,16 @@ Link Google Docs materi Introduction FE [disini](https://docs.google.com/documen
 
 # Summary
 
-###**Frontend Developer**
+### **Frontend Developer**
+
 Frontend developer bertanggung jawab untuk mengurus hal-hal yang berkaitan dengan tampilan sebuah web yang akan di tampilkan kepada end user. Tugas seorang Frontend adalah memastikan bahwa UI yang dibuat dapat digunakan dengan baik dan bekerja semestinya.
 
-###**Roadmap Frontend Developer**
+### **Roadmap Frontend Developer**
+
 Sebagai dasar pelajaran, kita perlu mengetahui cara internet bekerja. Kemudian mengetahui soal bahasa pemrograman yang biasa digunakan oleh frontend developer, yaitu HTML, CSS, dan Javascript. Selanjutnya mempelajari tentang _version control system_ yaitu Git dan platformnya yaitu Github. Git merupakan software untuk mengontrol versi atau proyek manajemen yang sangat dibutuhkan web developer untuk membangun proyek bersama tim.
 
-###**Package Manager**
+### **Package Manager**
+
 macam-macam package manager yang dapat digunakan diantaranya:
 
 - npm / Node Package Manager (javascript)
