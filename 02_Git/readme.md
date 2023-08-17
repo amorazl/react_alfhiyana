@@ -25,3 +25,15 @@ mempelajari command git, diantaranya:
 Mempelajari cara menggunakan branch untuk pengembangan proyek bersama. Branch yang baik memiliki 3 fitur utama yaitu main > development > features.
 
 # Latihan
+
+**1. Membuat branch baru dengan command:**
+`git checkout -b feat/02-git`
+maka git akan membuat new branch dan langsung switch ke branch baru tersebut.
+
+![git checkout -b](https://github.com/[amorazl]/[react_alfhiyana]/blob/[feat/02-git]/git-checkout.png?raw=true)
+
+**2. Modifikasi file dan push changes**
+
+**3. membuat pull request**
+
+**4. merge pull request**
