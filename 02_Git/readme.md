@@ -29,11 +29,21 @@ Mempelajari cara menggunakan branch untuk pengembangan proyek bersama. Branch ya
 **1. Membuat branch baru dengan command:**
 `git checkout -b feat/02-git`
 maka git akan membuat new branch dan langsung switch ke branch baru tersebut.
-
-![git checkout -b](https://github.com/[amorazl]/[react_alfhiyana]/blob/[feat/02-git]/git-checkout.png?raw=true)
+![git-checkout](https://github.com/amorazl/react_alfhiyana/assets/107467634/6b217bfd-0899-43fd-97c2-70d442cabdcd)
 
 **2. Modifikasi file dan push changes**
+setelah masuk ke branch baru, buat modifikasi dan push perubahan tersebut dengan command di bawah ini.
+![Screen Shot 2023-08-17 at 21 18 18](https://github.com/amorazl/react_alfhiyana/assets/107467634/fa1e9e36-c4a5-461e-8f9b-92bba96d7d34)
 
-**3. membuat pull request**
+**3. Membuat pull request**
+selanjutnya yaitu membuat pull request ke branch main dan masukkan deskripsi lebih detail.
+![Screen Shot 2023-08-17 at 21 19 18](https://github.com/amorazl/react_alfhiyana/assets/107467634/1c979064-413d-4e48-9189-5a4186253546)
 
-**4. merge pull request**
+
+**4. Merge pull request**
+setelah pull request dibuka, kita dapat merge dari branch ```feat/02-git``` dengan ```main``` jika tidak ada conflict dengan menekan tombol **merge pull request**
+![Screen Shot 2023-08-17 at 21 20 12](https://github.com/amorazl/react_alfhiyana/assets/107467634/2bf79e69-c06b-4213-a74a-4dc4e8daad80)
+
+**5. Pull request berhasil dilakukan**
+jika merge pull request telah selesai dilakukan, maka pull request tersebut akan langsung ditutup. 
+![Screen Shot 2023-08-17 at 21 20 23](https://github.com/amorazl/react_alfhiyana/assets/107467634/e0bb6988-e6c9-40b6-8c0c-4ea22d9cdd1d)
