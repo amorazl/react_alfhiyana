@@ -34,7 +34,7 @@ git checkout -b feat/02-git
 ```
 maka git akan membuat new branch dan langsung switch ke branch baru tersebut.
 
-![git-checkout](/screenshots/git-checkout.png)
+![git-checkout](/02_Git/screenshots/git-checkout.png)
 
 
 >**2. Modifikasi file dan push changes**
