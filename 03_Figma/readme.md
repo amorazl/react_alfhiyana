@@ -14,12 +14,9 @@ Pada figma ini front-end tidak bertanggung jawab pada design figma karena itu me
 
 Di dalam Figma terdapat 3 buah tools yang dapat dimanfaatkan oleh Front-end developer, yaitu:
 
-- Comment
-  Memberikan komentar pada bagian tertentu untuk mendiskusikannya dengan tim.
-- Properties
-  Berisi informasi properti tentang komponen dalam design
-- Export
-  Melakukan export components yang akan dimasukkan ke dalam file coding.
+- Comment => memberikan komentar pada bagian tertentu untuk mendiskusikannya dengan tim.
+- Properties => berisi informasi properti tentang komponen dalam design
+- Export => melakukan export components yang akan dimasukkan ke dalam file coding.
 
 Ada juga fitur lain khusus developer yaitu Dev Mode. Dengan menyalakan Dev Mode, kita dapat melakukan inspect pada tiap elemen secara detail. Informasi ini mencakup color, font-size, font-family, font-style, margin, padding, dan sebagainya yang akan sangat membantu kita dalam mengimplementasikan desain ke dalam coding.
 
