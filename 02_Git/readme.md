@@ -34,7 +34,7 @@ git checkout -b feat/02-git
 ```
 maka git akan membuat new branch dan langsung switch ke branch baru tersebut.
 
-![git-checkout](https://github.com/amorazl/react_alfhiyana/assets/107467634/56ef8532-8f91-49a4-b9cf-5f018613afee)
+![git-checkout](/screenshots/git-checkout.png)
 
 
 >**2. Modifikasi file dan push changes**
