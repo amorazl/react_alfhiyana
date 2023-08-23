@@ -11,6 +11,9 @@
       .mx {
         margin: 20px 50px;
       }
+      .br {
+        display: block;
+      }
     </style>
   </head>
   <body class="mx">
@@ -18,7 +21,7 @@
     <h2>Detail Product</h2>
     <form>
       <div class="mb">
-        <label>Product Name:</label> <br />
+        <label for="name" class="br">Product Name:</label>
         <input
           type="text"
           id="name"
@@ -29,7 +32,7 @@
         />
       </div>
       <div class="mb">
-        <label>Product Category:</label> <br />
+        <label for="category" class="br">Product Category:</label>
         <select id="category" name="category" required>
           <option value="food">Food</option>
           <option value="fashion">Fashion</option>
@@ -37,11 +40,11 @@
         </select>
       </div>
       <div class="mb">
-        <label>Product Freshness :</label> <br />
+        <label for="brand">Product Freshness :</label> <br />
         <input type="radio" id="brand" name="product" value="brand" required />
         <label for="second">Brand New</label><br />
         <input type="radio" id="second" name="product" value="second" />
-        <label for="css">Second Hank</label><br />
+        <label for="other">Second Hank</label><br />
         <input type="radio" id="other" name="product" value="other" />
         <label for="javascript">Refurbished</label>
       </div>
@@ -50,11 +53,11 @@
         <input type="file" id="myfile" name="myfile" multiple required />
       </div>
       <div class="mb">
-        <label>Additional Description</label> <br />
+        <label for="desc" class="br">Additional Description</label>
         <textarea id="desc" name="desc" rows="4" cols="50" required></textarea>
       </div>
       <div class="mb">
-        <label>Product Price:</label> <br />
+        <label for="price" class="br">Product Price:</label>
         <input
           type="number"
           id="price"
