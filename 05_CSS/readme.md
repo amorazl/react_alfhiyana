@@ -7,7 +7,7 @@ CSS (Cascading Style Sheets) adalah bahasa pemrograman yang digunakan untuk meng
 ### Cara menggunakan CSS
 
 1. Extenal CSS <br>
-   Membuat file tersendiri di luar file html, misalnya style.css dan dihubungkan ke file html melalui link
+   Membuat file tersendiri di luar file html, misalnya style.css dan dihubungkan ke file html melalui link.
 
 2. Internal CSS <br>
    Menambahkan CSS pada tag `style` di dalam tag head atau body.
@@ -19,17 +19,17 @@ CSS (Cascading Style Sheets) adalah bahasa pemrograman yang digunakan untuk meng
    <button style="color: blue; border: 1px solid gray">Lihat</button>
    ```
 
-   ### Bootstrap
+### Bootstrap
 
-   Framework adalah sekumpulan code yang dapat digunakan langsung untuk mempermudah proses pembangunan website. Bootstrap merupakan salah satu framework CSS yang paling banyak digunakan karena cepat, gratis, responsif, dan mudah digunakan.
+Framework adalah sekumpulan code yang dapat digunakan langsung untuk mempermudah proses pembangunan website. Bootstrap merupakan salah satu framework CSS yang paling banyak digunakan karena cepat, gratis, responsif, dan mudah digunakan.
 
-   Di dalam bootstrap kita dapat memanfaatkan berbagai component, contohnya:
+Di dalam bootstrap kita dapat memanfaatkan berbagai component, contohnya:
 
-   - Grid
-   - Form
-   - Card
-   - Accordion
-   - Carousel, dll.
+- Grid
+- Form
+- Card
+- Accordion
+- Carousel, dll.
 
 ---
 
@@ -45,14 +45,14 @@ CSS (Cascading Style Sheets) adalah bahasa pemrograman yang digunakan untuk meng
 
 ### 2. Mengimplementasikan beberapa point berikut
 
-> Mengimplementasikan hover pada button dan list footer :white_check_mark:
-> Mengimplementasikan CSS External dan selection class :white_check_mark:
-> Mengimplementasikan selector dengan id, class dan tag :white_check_mark:
+- Mengimplementasikan hover pada button dan list footer :white_check_mark:
+- Mengimplementasikan CSS External dan selection class :white_check_mark:
+- Mengimplementasikan selector dengan id, class dan tag :white_check_mark:
 
 ## Soal Eksplorasi
 
-> 1. Membuat halaman menjadi responsive untuk halaman LandingPage.html dengan media query pure CSS. :white_check_mark:
-> 2. Membuat efek transisi warna background pada section subscribe :white_check_mark:
+- Membuat halaman menjadi responsive untuk halaman LandingPage.html dengan media query pure CSS. :white_check_mark:
+- Membuat efek transisi warna background pada section subscribe :white_check_mark:
 
 ```
 #subscribe {
