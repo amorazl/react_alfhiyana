@@ -42,3 +42,61 @@ Ketika membuat navbar menggunakan Bootstrap maka kita dapat mengubah navbar menj
 ---
 
 # Latihan
+
+## Soal Prioritas 1
+
+### 1. Gunakan komponent bootstrap seperti navbar untuk membuat navigation di LandingPage.html
+
+![navbar](.screenshots/landing-page-01.png)
+![hasil-bootstrap](./screenshots/landing-page-02.png)
+
+### 2. Gunakan komponent bootstrap seperti button dan form di halaman CreateProduct.html
+
+form
+
+```
+ <!-- FORM SECTION -->
+    <section>
+      <form class="row justify-content-center">
+        ...
+      </form>
+    </section>
+```
+
+button
+
+```
+<div class="d-grid">
+    <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+```
+
+### 3. Buatlah halaman CreateProduct.html
+
+halaman html di convert pada link [ini.](https://cloudconvert.com/)
+
+![createProduct.html](./screenshots/create-product.png)
+
+## Soal Prioritas 2
+
+### 1. Gunakan grid system dari BS ketika membuat CreateProduct.html.
+
+```
+<div class="col-6">
+    <h5 class="text-start fw-bold">Detail Product</h5>
+    <div class="mb-4">
+        <label for="productName" class="form-label">Product name</label>
+        <input type="text" class="form-control" id="productName" />
+    </div>
+</div>
+```
+
+### 2. Buatlah halaman memiliki validasi memanfaatkan BS
+
+![validation](./screenshots/create-product-validation.png)
+
+## Soal Eksplorasi
+
+Menerapkan JavaScript plugin yaitu Carousel pada halaman CreateProduct.html
+
+![carousel](./screenshots/create-product-carousel.png)
