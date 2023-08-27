@@ -23,7 +23,7 @@ Beberapa contoh properti `Background` di antaranya:
 - background-position: mengatur posisi,
 - dll.
 
-### Responsiveness
+### Responsive
 
 Bootstrap memiliki sejumlah fitur responsif yang memungkinkan pengembang untuk dengan mudah menciptakan tampilan yang sesuai dengan berbagai ukuran layar dan perangkat. Berikut adalah beberapa fitur responsif kunci dalam Bootstrap:
 
@@ -47,7 +47,8 @@ Ketika membuat navbar menggunakan Bootstrap maka kita dapat mengubah navbar menj
 
 ### 1. Gunakan komponent bootstrap seperti navbar untuk membuat navigation di LandingPage.html
 
-![navbar](.screenshots/landing-page-01.png)
+![navbar](./screenshots/landing-page-01.png)
+
 ![hasil-bootstrap](./screenshots/landing-page-02.png)
 
 ### 2. Gunakan komponent bootstrap seperti button dan form di halaman CreateProduct.html
