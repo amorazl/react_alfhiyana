@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Jost", sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+}
+
+.text-gray {
+  color: lightgray;
+}
+
+.text-navy {
+  color: #37517e;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.bg-blue {
+  background-color: #37517e;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.float-end {
+  display: flex;
+  float: inline-end;
+}
+
+.btn-info {
+  border-radius: 30px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: #288ebc;
+    transition: background-color 0.4s;
+  }
+}
+
+.outline-btn {
+  background-color: transparent;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: aliceblue;
+    color: black;
+    transition: background-color 0.5s;
+  }
+}
+
+input[type="text"],
+select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+ul.list-unstyled {
+  list-style: none;
+  padding-left: 0px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #777777;
+  cursor: default;
+  &:hover {
+    color: #37517e;
+  }
+}
+
+.btn-info {
+  padding: 14px 30px;
+  border-radius: 30px;
+  color: white !important;
+}
+
+.circle {
+  background-color: #47b2e4;
+  border-radius: 50px;
+  height: 35px;
+  width: 35px;
+}
+
+#subscribe {
+  background-color: #f3f5fa;
+  animation: changeBackgroundColor 10s infinite;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: azure;
+  }
+  25% {
+    background-color: lavenderblush;
+  }
+  50% {
+    background-color: lavender;
+  }
+  75% {
+    background-color: mistyrose;
+  }
+  100% {
+    background-color: #f3f5fa;
+  }
+}
