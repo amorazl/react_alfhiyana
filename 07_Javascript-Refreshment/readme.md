@@ -42,10 +42,12 @@ Sebuah function yang terkait dengan object yang bertujuan untuk menyederhanakan 
 
 - Product Name tidak boleh melebihi 25 karakter
 
-jumlah karakter yang tersisa dihitung pada variabel `charactersRemaining`
+jumlah karakter yang tersisa dihitung pada variabel `charactersRemaining`<br> 
+
 ![productname](./screenshots/productname-01.png)
 
-jika form input text sudah mencapai 25 karakter maka tidak dapat memasukkan input lagi
+jika form input text sudah mencapai 25 karakter maka tidak dapat memasukkan input lagi <br>
+
 ![productname](./screenshots/productname-02.png)
 
 - Jika Product Name melebihi 10 karakter tambilkan pesan error atau peringatan/alert seperi "Last Name must not exceed 25 characters."
@@ -58,9 +60,9 @@ jika form input text sudah mencapai 25 karakter maka tidak dapat memasukkan inpu
 
 ## Soal Prioritas 2
 
-- Procut Name tidak boleh mengandung karakter seperti @/#{}
+- Product Name tidak boleh mengandung karakter seperti @/#{}
 
-- Jika Procut Name mengandung symbol @/#{} tampilkan pesan error atau peringatan misal "Name must not contain symbols."
+- Jika Product Name mengandung symbol @/#{} tampilkan pesan error atau peringatan misal "Name must not contain symbols."
 
 ![productname](./screenshots/productname-04.png)
 
