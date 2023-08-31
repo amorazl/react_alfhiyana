@@ -42,13 +42,19 @@ Sebuah function yang terkait dengan object yang bertujuan untuk menyederhanakan 
 
 - Product Name tidak boleh melebihi 25 karakter
 
+jumlah karakter yang tersisa dihitung pada variabel `charactersRemaining`
 ![productname](./screenshots/productname-01.png)
+
+jika form input text sudah mencapai 25 karakter maka tidak dapat memasukkan input lagi
+![productname](./screenshots/productname-02.png)
 
 - Jika Product Name melebihi 10 karakter tambilkan pesan error atau peringatan/alert seperi "Last Name must not exceed 25 characters."
 
-![productname](./screenshots/productname-02.png)
+![productname](./screenshots/productname-03.png)
 
 - Product Name dan Product Price tidak boleh kosong. Jika field tersebut kosong saat tombol Submit/Create Product di tekan maka tampilkan alert atau error bahwa field tersebut tidak boleh kosong. Misal "Please enter a valid Product name.".
+
+![productname&price](./screenshots/product-name-price.jpeg)
 
 ## Soal Prioritas 2
 
@@ -56,7 +62,7 @@ Sebuah function yang terkait dengan object yang bertujuan untuk menyederhanakan 
 
 - Jika Procut Name mengandung symbol @/#{} tampilkan pesan error atau peringatan misal "Name must not contain symbols."
 
-![productname](./screenshots/productname-03.png)
+![productname](./screenshots/productname-04.png)
 
 - Validasi input setiap form bahwa field tidak boleh kosong. Jika field kosong saat form dikirim maka tampilkan pesan error “The xxx field must be filled in”
 
