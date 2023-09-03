@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #116df6;
+  &:hover {
+    color: darkblue;
+  }
+}
+
+.file-upload::-webkit-file-upload-button {
+  background-color: #116df6;
+  color: white;
+  &:hover {
+    background-color: darkblue;
+  }
+}
