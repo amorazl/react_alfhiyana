@@ -68,7 +68,7 @@ Jumlah dari data akan selalu bertambah jika user terus mengisi form tersebut.
 
 ## Soal Eksplorasi
 
-Membuat tombol `Delete` yang selalu menghapus nilai terakhir yang di masukkan oleh user.
+1. Membuat tombol `Delete` yang selalu menghapus nilai terakhir yang di masukkan oleh user.
 
 > Tombol `Delete` akan menghapus row terakhir atau input yang baru dimasukkan oleh user.
 
@@ -78,6 +78,8 @@ Membuat tombol `Delete` yang selalu menghapus nilai terakhir yang di masukkan ol
 
 ![delete-all](./screenshots/Delete%20All.png)
 
-Membuat tombol search mencari data product berdasarkan Product Name
+2. Membuat tombol search mencari data product berdasarkan Product Name
+
+> Menampilkan hasil pencarian berdasarkan kata kunci yang dimasukkan 
 
 ![search-product](./screenshots/Search%20Product.png)
