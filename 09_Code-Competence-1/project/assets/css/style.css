@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary: #eda3a3;
+  --secondary: #faeeed;
+  --darkprimary: #ca7171;
+  --white: #ffffff;
+  --gray: #595959;
+  --lightgray: #6c757d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 66px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-weight: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+p {
+  font-size: 14px;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 7px 25px;
+  &:hover {
+    background-color: var(--darkprimary);
+    border: 1px solid var(--darkprimary);
+  }
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: var(--gray);
+  padding: 7px 25px;
+  border: 1px solid var(--lightgray);
+  &:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    border: 1px solid var(--primary);
+  }
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.pink-circle {
+  background-color: var(--primary);
+  height: 13px;
+  width: 13px;
+  border-radius: 50px;
+}
+
+.bg-home {
+  background-image: url("../img/shine.svg");
+  background-size: auto;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.bg-softpink {
+  background-color: var(--secondary);
+  background-size: cover;
+}
+
+.bg-review {
+  background-image: url("../img/bg-review.svg");
+  background-size: auto;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.star {
+  color: orange;
+}
+
+.review-font {
+  font-size: 55px;
+}
+
+footer ul li {
+  line-height: 35px;
+  & a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      color: var(--darkprimary);
+      transition: 200ms ease-in;
+    }
+  }
+}
+
+.footer-socmed a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: var(--darkprimary);
+    transition: 200ms ease-in;
+  }
+}
