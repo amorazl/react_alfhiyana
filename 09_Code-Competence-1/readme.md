@@ -34,6 +34,6 @@ Menggunakan framework bootstrap dengan kriteria dari aplikasi sebagai berikut:
 
 ![modal-form](./screenshots/modal-form.png)
 
-**Hasil Seluruh Website**
+## **Hasil Seluruh Website**
 
 ![website](./screenshots/landing-page.png)
