@@ -35,7 +35,7 @@ Lakukan Installation react menggunakan CRA
 
 Jalankan react pada local
 
-![welcome](./screenshots/welcome.png)
+![welcome](./screenshots/welcome-react.png)
 
 ### Soal eksplorasi
 
