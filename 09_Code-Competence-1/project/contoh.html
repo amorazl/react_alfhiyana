@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 Modal with Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section id="review" class="bg-review py-5">
+      <div class="container py-5">
+        <div class="row justify-content-around py-md-5">
+          <div class="col-5 align-self-center">
+            <p class="fw-semibold review-font">
+              What they're saying about our courses
+            </p>
+          </div>
+          <div class="col-6">
+            <img
+              src="./assets/img/customer.png"
+              alt=""
+              style="z-index: 99; position: absolute; margin-top: -120px"
+              class="offset-3 d-none d-lg-block"
+            />
+            <div class="card">
+              <div class="card-body">
+                <div class="pink-circle mb-5"></div>
+                <div class="mx-4">
+                  <div class="py-3">
+                    <i class="fa fa-star star fa-lg"></i>
+                    <i class="fa fa-star star fa-lg"></i>
+                    <i class="fa fa-star star fa-lg"></i>
+                    <i class="fa fa-star star fa-lg"></i>
+                    <i class="fa fa-star star fa-lg"></i>
+                  </div>
+                  <p>
+                    "I recently embarked on a quest to learn the Korean
+                    language, and after some extensive research, I stumbled upon
+                    Amorazl's Korean website, a great online platform for Korean
+                    language learners. My experience with this website has been
+                    nothing short of exceptional, and I'd like to share my
+                    thoughts through this review."
+                  </p>
+                  <h5 class="fw-semibold mb-0 mt-5">Jennie Kim</h5>
+                  <p>Idol, Actress, Singer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactUs" class="py-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="./assets/img/contact-us.svg" alt="" class="img-fluid" />
+          </div>
+          <div class="col">
+            <div class="card bg-softpink" style="border: none">
+              <div class="card-body">
+                <div class="pink-circle"></div>
+                <div class="text-center py-3">
+                  <h4 class="fw-semibold">Contact Us</h4>
+                  <p>
+                    We extend our gratitude for your valuable feedback, which
+                    helps us improve our products and services.
+                  </p>
+                </div>
+                <form id="contactForm">
+                  <div class="row">
+                    <div class="col">
+                      <label for="firstName" class="col-form-label"
+                        >First Name</label
+                      >
+                      <input type="text" id="firstName" class="form-control" />
+                    </div>
+                    <div class="col">
+                      <label for="lastName" class="col-form-label"
+                        >Last Name</label
+                      >
+                      <input type="text" id="lastName" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="my-3">
+                    <label for="email" class="col-form-label">Email</label>
+                    <input type="email" id="email" class="form-control" />
+                  </div>
+                  <label for="message" class="col-form-label"
+                    >What we can help you with?</label
+                  >
+                  <div class="form-floating mb-5">
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      style="height: 100px"
+                    ></textarea>
+                    <label for="message">Comments</label>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalForm"
+                  >
+                    Submit
+                  </button>
+                </form>
+                <p class="text-center text-muted">
+                  Improve your experience in our website
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-5" id="exampleModalLabel">Form Data</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Name: <span id="modalFirstName"></span></p>
+            <p>Name: <span id="modalLastName"></span></p>
+            <p>Email: <span id="modalEmail"></span></p>
+            <p>Email: <span id="modalMessage"></span></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-softpink py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="./assets/img/logo.svg" alt="" class="img-fluid mb-3" />
+            <p>
+              Jl. Florish Sserafim no. 10, <br />
+              Blok A/11, Central Park, <br />
+              Switzerland.
+            </p>
+          </div>
+          <div class="col">
+            <h5>MENU</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Full Courses</a></li>
+              <li><a href="#">Subscribe</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>EXPLORE</h5>
+            <ul class="list-unstyled">
+              <li><a href="">Courses</a></li>
+              <li><a href="">Test Level</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>ABOUT</h5>
+            <ul class="list-unstyled">
+              <li><a href="">Our Company</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">
+            <p>© Amorazl's Website</p>
+          </div>
+          <div class="col text-end footer-socmed">
+            <a href="https://www.linkedin.com/in/alfhiyana/">
+              <i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+            <a href="https://amorazl.blogspot.com/">
+              <i class="fa-brands fa-blogger fa-xl mx-2"></i>
+            </a>
+            <a href="https://www.instagram.com/amorazl_/">
+              <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Function to handle form submission
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+          const firstName = document.getElementById("firstName").value;
+          const lastName = document.getElementById("lastName").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+
+          // Update modal content with form data
+          document.getElementById("modalFirstName").textContent = firstName;
+          document.getElementById("modalLastName").textContent = lastName;
+          document.getElementById("modalEmail").textContent = email;
+          document.getElementById("modalMessage").textContent = message;
+
+          // Show the modal
+          const myModal = new bootstrap.Modal(
+            document.getElementById("myModal")
+          );
+          myModal.show();
+        });
+    </script>
+  </body>
+</html>
