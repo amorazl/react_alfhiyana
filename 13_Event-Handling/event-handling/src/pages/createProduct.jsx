@@ -55,7 +55,6 @@ function CreateProduct() {
     }
   };
 
-  // add data form to the table
   const handleSubmit = (e) => {
     e.preventDefault();
     const newErrors = {};
@@ -82,7 +81,6 @@ function CreateProduct() {
         productDesc: "",
         productPrice: "",
       });
-      console.log("Form submitted:", formData);
     }
   };
 
