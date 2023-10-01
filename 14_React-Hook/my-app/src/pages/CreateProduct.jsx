@@ -1,10 +1,15 @@
-import React, { useState } from "react";
-import { Button, Container, Row, Col, Form, FloatingLabel, Table } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Button, Container, Row, Col, Form, FloatingLabel, Table, Modal } from "react-bootstrap";
+import { v4 as uuidv4 } from "uuid";
 import Article from "../components/Article";
 import NavbarApp from "../components/NavbarApp";
 import FooterApp from "../components/FooterApp";
 
 function CreateProduct() {
+  useEffect(() => {
+    alert("Welcome");
+  }, []);
+
   const [data, setData] = useState([]);
   const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
@@ -72,7 +77,8 @@ function CreateProduct() {
 
     // if there are no errors, submit the form
     if (Object.keys(newErrors).length === 0) {
-      setData([...data, formData]);
+      const newProduct = { ...formData, id: uuidv4() };
+      setData([...data, newProduct]);
       setFormData({
         productName: "",
         productCategory: "",
@@ -87,12 +93,28 @@ function CreateProduct() {
   // function search
   const [searchProduct, setSearchProduct] = useState("");
   const [filteredData, setFilteredData] = useState([]);
-
   const handleSearchBtn = () => {
     const filtered = data.filter((item) =>
       item.productName.toLowerCase().includes(searchProduct.toLowerCase())
     );
     setFilteredData(filtered);
+  };
+
+  // function modal to delete from each row
+  const [deleteModal, setDeleteModal] = useState(false);
+  const [deletedId, setDeletedId] = useState(null);
+
+  const handleDeleteRow = (productId) => {
+    setDeletedId(productId);
+    setDeleteModal(true);
+  };
+  const deleteRow = () => {
+    const updateData = data.filter((item) => item.id !== deletedId);
+    setData(updateData);
+    setDeleteModal(false);
+  };
+  const closeModal = () => {
+    setDeleteModal(false);
   };
 
   // function delete the last row
@@ -111,7 +133,6 @@ function CreateProduct() {
 
   const [randomNumber, setRandomNumber] = useState(null);
   const handleRandomNumber = () => {
-    // Generates a random number between 1 and 100
     const random = Math.floor(Math.random() * 100) + 1;
     setRandomNumber(random);
   };
@@ -243,33 +264,36 @@ function CreateProduct() {
           <Table striped bordered hover id="productTable">
             <thead>
               <tr>
+                <th>ID</th>
                 <th>Product Name</th>
                 <th>Product Category</th>
-                <th>Product Image</th>
                 <th>Product Freshness</th>
-                <th>Additional Desciption</th>
                 <th>Product Price</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
               {searchProduct.trim() === ""
-                ? data.map((item, i) => (
-                    <tr key={i}>
+                ? data.map((item) => (
+                    <tr key={item.id}>
+                      <td>{item.id}</td>
                       <td>{item.productName}</td>
                       <td>{item.productCategory}</td>
-                      <td>{item.productImage}</td>
                       <td>{item.productFreshness}</td>
-                      <td>{item.productDesc}</td>
                       <td>{item.productPrice}</td>
+                      <td>
+                        <Button variant="danger" onClick={() => handleDeleteRow(item.id)}>
+                          Hapus
+                        </Button>
+                      </td>
                     </tr>
                   ))
-                : filteredData.map((item, i) => (
-                    <tr key={i}>
+                : filteredData.map((item) => (
+                    <tr key={item.id}>
+                      <td>{item.id}</td>
                       <td>{item.productName}</td>
                       <td>{item.productCategory}</td>
-                      <td>{item.productImage}</td>
                       <td>{item.productFreshness}</td>
-                      <td>{item.productDesc}</td>
                       <td>{item.productPrice}</td>
                     </tr>
                   ))}
@@ -300,6 +324,21 @@ function CreateProduct() {
           </Row>
         </Container>
       </section>
+
+      <Modal show={deleteModal} onHide={closeModal} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Delete Data</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Are you sure to delete this data?</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            Cancel
+          </Button>
+          <Button variant="primary" onClick={deleteRow}>
+            Delete
+          </Button>
+        </Modal.Footer>
+      </Modal>
 
       <section className="py-5">
         <Container>

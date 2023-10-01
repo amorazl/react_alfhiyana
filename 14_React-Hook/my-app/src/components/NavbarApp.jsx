@@ -11,7 +11,7 @@ export default function NavbarApp() {
           </Navbar.Brand>
           <Nav className="ms-auto">
             <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">Features</Nav.Link>
+            <Nav.Link href="#">Create Account</Nav.Link>
             <Nav.Link href="#">Pricing</Nav.Link>
           </Nav>
         </Container>
