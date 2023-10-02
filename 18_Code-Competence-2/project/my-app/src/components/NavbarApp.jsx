@@ -15,10 +15,10 @@ export default function NavbarApp() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
-              <Link to="#courses" className="nav-link">
+              <Link to="#" className="nav-link">
                 Courses
               </Link>
-              <Link to="#review" className="nav-link">
+              <Link to="#" className="nav-link">
                 Review
               </Link>
               <Link to="/about-us" className="nav-link">

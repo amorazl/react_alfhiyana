@@ -8,7 +8,7 @@ import logo from "../assets/logo.svg";
 export default function FooterApp() {
   return (
     <>
-      <footer>
+      <footer className="pt-5 pb-3 bg-softpink">
         <Container>
           <Row>
             <Col>
@@ -60,6 +60,7 @@ export default function FooterApp() {
               </ul>
             </Col>
           </Row>
+          <hr />
           <Row>
             <Col>
               <p>© Amorazl's Website</p>

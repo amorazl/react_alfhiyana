@@ -13,25 +13,25 @@ body {
 }
 
 h1 {
-  font-size: 66px;
+  font-size: 76px;
 }
 h2 {
-  font-size: 40px;
+  font-size: 45px;
 }
 h3 {
-  font-size: 24px;
+  font-size: 32px;
 }
 h4 {
-  font-size: 20px;
+  font-size: 22px;
 }
 h5 {
-  font-weight: 16px;
+  font-weight: 18px;
 }
 h6 {
-  font-size: 12px;
+  font-size: 14px;
 }
 p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .nav-link {
@@ -70,6 +70,13 @@ p {
   border-radius: 15px;
 }
 
+.circle-card {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  background-color: $primary;
+}
+
 .pink-circle {
   background-color: $primary;
   height: 13px;
@@ -89,6 +96,11 @@ p {
   background-size: cover;
 }
 
+.bg-rosewood {
+  background-color: $rosewood;
+  color: white;
+}
+
 .bg-review {
   background-image: url("../assets/bg-review.svg");
   background-size: auto;
@@ -96,12 +108,15 @@ p {
   background-repeat: no-repeat;
 }
 
-.star {
-  color: orange;
+.img-review {
+  z-index: 99;
+  position: absolute;
+  margin-top: -120px;
 }
 
-.review-font {
-  font-size: 55px;
+.star {
+  color: orange;
+  font-size: 30px;
 }
 
 footer ul li {
