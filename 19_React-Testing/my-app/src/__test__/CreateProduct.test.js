@@ -1,37 +1,10 @@
-# Summary
+import "@testing-library/jest-dom/extend-expect";
+import { render, fireEvent, screen } from "@testing-library/react";
+import CreateProduct from "../pages/CreateProduct";
+import { Provider } from "react-redux";
+import { MemoryRouter } from "react-router-dom";
+import store from "../store/store";
 
-### Testing
-
-Merupakan proses memverifikasi bahwa code yang kita buat berjalan dengan baik sepanjang aplikasi. Manfaat melakukan testing:
-
-- Jika ingin mengubah suatu bagian, kita dapat percaya diri dan cepat mengetahui bagian mana yang bermasalah jika ada bug
-- Mengurangi bug pada aplikasi
-- Memastikan memiliki fungsional yang konsisten
-- Meningkatkan kualitas code
-
-### Rekomendasi Tools
-
-1. Jest
-   Test runner javascript yang memungkinkan untuk mengakses DOM melalui JSDom. Kelebihannya yaitu mudah digunakan, sintaks yang bersih, fitur mocking yang kuat. Kekurangannya yaitu memerlukan konfigurasi awal yang cukup kompleks.
-
-2. React Testing Library
-   Memungkinkan kita untuk mengetes komponen react tanpa bergantung pada detail implementasinya. Kelebihan ini memudahkan proses refactoring dan mendorong kita menerapkan best practices untuk aksesibilitas.
-
-### Handle
-
-Beberapa kategori testing yang dapat digunakan pada handle event: GetByText, LabelText, PlaceholderText, AltText, & DisplayValue.
-
-Handle Asynchronous digunakan ketika hendak mengetes fetch pada sebuah API.
-
----
-
-# Latihan
-
-### Soal Prioritas 1
-
-- Pada file CreateProduct.test.js buatlah test untuk memastikan bahwa form input Product Name dapat menerima input teks dan menampilkannya di halaman.
-
-```
 test("productName accepts input and displays it", () => {
   render(
     <Provider store={store}>
@@ -49,11 +22,7 @@ test("productName accepts input and displays it", () => {
   // Assert
   expect(productNameInput.value).toBe(inputValue);
 });
-```
 
-- Buatlah test untuk memastikan bahwa pilihan setiap form yang dipilih dapat disimpan dan ditampilkan dengan benar.
-
-```
 test("productCategory input is valid to save and display", () => {
   render(
     <Provider store={store}>
@@ -69,13 +38,7 @@ test("productCategory input is valid to save and display", () => {
 
   expect(screen.getByDisplayValue(selectedCategory)).toBeInTheDocument();
 });
-```
 
-### Soal Prioritas 2
-
-- validasi product name
-
-```
 test("validates Product Name input correctly", () => {
   render(
     <Provider store={store}>
@@ -108,11 +71,6 @@ test("validates Product Name input correctly", () => {
   expect(screen.queryByText("Input must be 25 characters or less.")).toBeNull();
 });
 
-```
-
-- Buatlah test untuk memastikan validasi semua form field tersebut tidak boleh kosong.
-
-```
 test("validates all form fields are not empty", () => {
   render(
     <Provider store={store}>
@@ -143,13 +101,7 @@ test("validates all form fields are not empty", () => {
     expect(error).toBeInTheDocument();
   });
 });
-```
 
-### Soal Eksplorasi
-
-Buatlah test untuk memastikan bahwa form dapat menampilkan pesan error jika terjadi kesalahan saat menyimpan data ke state
-
-```
 test("displays error message when data saving fails", async () => {
   const mockSaveFunction = jest.fn();
   mockSaveFunction.mockImplementation(() => {
@@ -173,4 +125,3 @@ test("displays error message when data saving fails", async () => {
   const errorMessage = await screen.findByText("Failed to save data");
   expect(errorMessage).toBeInTheDocument();
 });
-```
