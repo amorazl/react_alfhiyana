@@ -62,7 +62,7 @@ export default function Home() {
               <Button variant="outline-secondary">Sign Up</Button>
             </Col>
             <Col className="text-end mt-5">
-              <img src={IconHome} alt="" />
+              <img src={IconHome} alt="" className="img-fluid d-none d-md-block" />
             </Col>
           </Row>
         </Container>
@@ -71,7 +71,7 @@ export default function Home() {
       <section className="py-5 mb-5 text-center">
         <Container>
           <Row className="justify-content-evenly">
-            <Col sm={12} md={3}>
+            <Col sm={12} md={4} lg={3}>
               <Card>
                 <Card.Body>
                   <div class="pink-circle"></div>
@@ -84,8 +84,8 @@ export default function Home() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col sm={12} md={3}>
-              <Card>
+            <Col sm={12} md={4} lg={3}>
+              <Card className="my-4 my-md-0">
                 <Card.Body>
                   <div class="pink-circle"></div>
                   <img src={Icon02} alt="" className="my-3" />
@@ -97,7 +97,7 @@ export default function Home() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col sm={12} md={3}>
+            <Col sm={12} md={4} lg={3}>
               <Card>
                 <Card.Body>
                   <div class="pink-circle"></div>
@@ -114,7 +114,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-softpink">
+      <section className="bg-softpink pb-5">
         <Container>
           <Row className="justify-content-between">
             <Col sm={12} md={6}>
@@ -141,9 +141,10 @@ export default function Home() {
         <Container>
           <Row className="py-5 my-5 justify-content-between">
             <Col md={5} className="align-self-center">
-              <h2 className="fw-semibold lh-base" style={{ fontSize: "55px" }}>
+              <h2 className="fw-semibold lh-base d-none d-md-block" style={{ fontSize: "55px" }}>
                 What they're saying about our courses
               </h2>
+              <h3 className="fw-semibold d-md-none my-3 pt-5">What they're saying about our courses</h3>
             </Col>
             <Col md={6}>
               <img src={Customer} alt="" className="img-review offset-3 d-none d-lg-block" />
@@ -177,7 +178,7 @@ export default function Home() {
       <section className="py-5">
         <Container>
           <Row>
-            <Col>
+            <Col sm={12} md={6}>
               <img src={ContactUs} alt="" className="img-fluid" />
             </Col>
             <Col>
@@ -199,6 +200,7 @@ export default function Home() {
                           <Form.Control
                             type="text"
                             name="firstName"
+                            placeholder="First Name"
                             value={formData.firstName}
                             onChange={handleChange}
                             required
@@ -211,6 +213,7 @@ export default function Home() {
                           <Form.Control
                             type="text"
                             name="lastName"
+                            placeholder="Last Name"
                             value={formData.lastName}
                             onChange={handleChange}
                             required
@@ -223,6 +226,7 @@ export default function Home() {
                       <Form.Control
                         type="email"
                         name="email"
+                        placeholder="Email"
                         value={formData.email}
                         onChange={handleChange}
                         required
@@ -235,6 +239,7 @@ export default function Home() {
                           as="textarea"
                           placeholder=""
                           name="message"
+                          style={{ height: "100px" }}
                           value={formData.message}
                           onChange={handleChange}
                           required

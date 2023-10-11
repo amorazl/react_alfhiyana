@@ -11,17 +11,15 @@ export default function FooterApp() {
       <footer className="pt-5 pb-3 bg-softpink">
         <Container>
           <Row>
-            <Col>
+            <Col sm={12} md={4}>
               <img src={logo} alt="logo" />
-              <p class="mb-1">
+              <p class="mb-1 mt-2">
                 <i class="fa-solid fa-phone"></i>
                 021-7777-999
               </p>
-              <p>
-                Jl. Florish Sserafim no. 10, <br />
-                Blok A/11, Central Park, <br />
-                Switzerland.
-              </p>
+              <Col md={6}>
+                <p>Jl. Florish Sserafim no. 10, Blok A/11, Central Park, Switzerland.</p>
+              </Col>
             </Col>
             <Col>
               <h5>MENU</h5>
