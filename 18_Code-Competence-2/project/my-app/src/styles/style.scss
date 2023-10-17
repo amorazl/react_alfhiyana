@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+$primary: #eda3a3;
+$secondary: #faeeed;
+$rosewood: #ca7171;
+$gray: #595959;
+$light-gray: #6c757d;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 76px;
+}
+h2 {
+  font-size: 45px;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-weight: 18px;
+}
+h6 {
+  font-size: 14px;
+}
+p {
+  font-size: 16px;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin-right: 25px;
+  text-decoration: none;
+  transition: ease-in-out 300ms;
+  &:hover {
+    color: $rosewood;
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  border: 1px solid $primary;
+  padding: 7px 25px;
+  &:hover {
+    background-color: $rosewood;
+    border: 1px solid $rosewood;
+  }
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: $gray;
+  padding: 7px 25px;
+  border: 1px solid $light-gray;
+  &:hover {
+    background-color: $primary;
+    color: white;
+    border: 1px solid $primary;
+  }
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.circle-card {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  background-color: $primary;
+}
+
+.pink-circle {
+  background-color: $primary;
+  height: 13px;
+  width: 13px;
+  border-radius: 50px;
+}
+
+.bg-home {
+  background-image: url("../assets/shine.svg");
+  background-size: auto;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.bg-softpink {
+  background-color: $secondary;
+  background-size: cover;
+}
+
+.bg-rosewood {
+  background-color: $rosewood;
+  color: white;
+}
+
+.bg-review {
+  background-image: url("../assets/bg-review.svg");
+  background-size: auto;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.bg-aboutus {
+  background-image: url("../assets/bg-aboutus.jpeg");
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.text-primary {
+  color: $rosewood !important;
+}
+
+.img-review {
+  z-index: 99;
+  position: absolute;
+  margin-top: -120px;
+}
+
+.star {
+  color: orange;
+  font-size: 30px;
+}
+
+footer ul li {
+  line-height: 35px;
+  & a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      color: $rosewood;
+      transition: 300ms ease-in-out;
+    }
+  }
+}
+
+.footer-socmed a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 10px;
+  &:hover {
+    color: $rosewood;
+    transition: 300ms ease-in-out;
+  }
+}
