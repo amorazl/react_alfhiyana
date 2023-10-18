@@ -66,7 +66,7 @@ const handleUpdate = (e) => {
 
 Sebelum di edit:
 
-![before](./screenshots/before-editing.png)
+![before](./screenshots/before-edit.png)
 
 Proses edit data:
 
