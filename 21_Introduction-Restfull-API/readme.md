@@ -32,4 +32,15 @@ Buat endpoint baru di MockAPI dengan skema product memiliki field yang sama sepe
 
 Gunakan axios untuk mengambil data dari endpoint MockAPI dan tampilkan daftar user tersebut di komponen/halaman ListProduct.jsx yang sudah anda buat untuk menampilkan List Account.
 
+```
+const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://652f67620b8d8ddac0b2710c.mockapi.io/product")
+      .then((res) => setProducts(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+```
+
 ![table-list](./screenshots/table-list.png)
