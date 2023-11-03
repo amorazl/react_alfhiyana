@@ -28,12 +28,14 @@ Pastikan untuk menguji dan memelihara komponen React yang berhubungan dengan Ope
 
 Berikut hasil percobaan menggunakan 2 model Open AI yang berbeda:
 
+> Hasil yang didapatkan dari model text-davinci-003 tidak menjabarkan jawaban yang diharapkan.
+
 ![text-davinci-003](./screenshots/text-davinci-003.png)
 
-> Hasil yang didapatkan dari model ini tidak menjabarkan jawaban yang diharapkan.
+
+> Sedangkan ketika menggunakan model gpt-3.5-turbo, response yang didapatkan lebih maksimal dan menjawab pertanyaan dengan cukup baik.
 
 ![gpt-35](./screenshots/gpt-3.5-turbo.png)
 
-> Sedangkan ketika menggunakan model gpt-3.5-turbo, response yang didapatkan lebih maksimal dan menjawab pertanyaan dengan cukup baik.
 
 Fitur tambahan yang dapat memudahkan user yaitu "fill form" untuk melakukan test tanpa harus mengetik secara manual pada prompt.
