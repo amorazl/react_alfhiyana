@@ -113,7 +113,7 @@ const QnA = () => {
                         placeholder="Type your message..."
                         onPressEnter={handleSendMessage}
                       />
-                      <Button type="submit" onClick={handleSendMessage}>
+                      <Button type="primary" onClick={handleSendMessage}>
                         Send
                       </Button>
                     </Space.Compact>
